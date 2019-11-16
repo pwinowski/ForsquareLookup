@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import ForsquareLookup
 
 class ForsquareLookupTests: XCTestCase {

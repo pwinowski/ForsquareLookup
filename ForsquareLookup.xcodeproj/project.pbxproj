@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841822AF237DF67800F7F4B3 /* SecretsKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841822AE237DF67800F7F4B3 /* SecretsKeeper.swift */; };
+		84230DF423800678005E54AB /* VenuesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DF323800678005E54AB /* VenuesPresenter.swift */; };
+		84230DF723800B95005E54AB /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DF623800B95005E54AB /* Venue.swift */; };
+		84230DF923800BE6005E54AB /* VenueLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DF823800BE6005E54AB /* VenueLocation.swift */; };
+		84230DFB23800C1E005E54AB /* VenueLabeledLatLng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DFA23800C1E005E54AB /* VenueLabeledLatLng.swift */; };
+		84230DFD2380106F005E54AB /* ForsquareFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DFC2380106F005E54AB /* ForsquareFacade.swift */; };
 		84B8DB63237B688200B88D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB62237B688200B88D4B /* AppDelegate.swift */; };
 		84B8DB65237B688200B88D4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB64237B688200B88D4B /* SceneDelegate.swift */; };
 		84B8DB67237B688200B88D4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB66237B688200B88D4B /* ViewController.swift */; };
@@ -14,6 +20,8 @@
 		84B8DB6C237B688300B88D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B8DB6B237B688300B88D4B /* Assets.xcassets */; };
 		84B8DB6F237B688300B88D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8DB6D237B688300B88D4B /* LaunchScreen.storyboard */; };
 		84B8DB7A237B688300B88D4B /* ForsquareLookupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB79237B688300B88D4B /* ForsquareLookupTests.swift */; };
+		88878443D6DD71DFC1F627CE /* Pods_ForsquareLookup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA3FF8C3D5C1FAF7FD3E52 /* Pods_ForsquareLookup.framework */; };
+		D02B90F9E366BBCD8E491913 /* Pods_ForsquareLookupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7467DCE00A6B381AEE824FE /* Pods_ForsquareLookupTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54BA3FF8C3D5C1FAF7FD3E52 /* Pods_ForsquareLookup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquareLookup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC5B54E207B1D42DF9565DA /* Pods-ForsquareLookupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareLookupTests.release.xcconfig"; path = "Target Support Files/Pods-ForsquareLookupTests/Pods-ForsquareLookupTests.release.xcconfig"; sourceTree = "<group>"; };
+		841822AE237DF67800F7F4B3 /* SecretsKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsKeeper.swift; sourceTree = "<group>"; };
+		84230DF323800678005E54AB /* VenuesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesPresenter.swift; sourceTree = "<group>"; };
+		84230DF623800B95005E54AB /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		84230DF823800BE6005E54AB /* VenueLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueLocation.swift; sourceTree = "<group>"; };
+		84230DFA23800C1E005E54AB /* VenueLabeledLatLng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueLabeledLatLng.swift; sourceTree = "<group>"; };
+		84230DFC2380106F005E54AB /* ForsquareFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForsquareFacade.swift; sourceTree = "<group>"; };
 		84B8DB5F237B688200B88D4B /* ForsquareLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForsquareLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B8DB62237B688200B88D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B8DB64237B688200B88D4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +54,10 @@
 		84B8DB75237B688300B88D4B /* ForsquareLookupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForsquareLookupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B8DB79237B688300B88D4B /* ForsquareLookupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForsquareLookupTests.swift; sourceTree = "<group>"; };
 		84B8DB7B237B688300B88D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		899404B3387630F527F38F2A /* Pods-ForsquareLookup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareLookup.release.xcconfig"; path = "Target Support Files/Pods-ForsquareLookup/Pods-ForsquareLookup.release.xcconfig"; sourceTree = "<group>"; };
+		B7467DCE00A6B381AEE824FE /* Pods_ForsquareLookupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquareLookupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FC1B0DE46BABCEAEE89140 /* Pods-ForsquareLookupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareLookupTests.debug.xcconfig"; path = "Target Support Files/Pods-ForsquareLookupTests/Pods-ForsquareLookupTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F39A36E06035A7979CFDFA64 /* Pods-ForsquareLookup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareLookup.debug.xcconfig"; path = "Target Support Files/Pods-ForsquareLookup/Pods-ForsquareLookup.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88878443D6DD71DFC1F627CE /* Pods_ForsquareLookup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +73,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02B90F9E366BBCD8E491913 /* Pods_ForsquareLookupTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84230DF22380065E005E54AB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84230DF323800678005E54AB /* VenuesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84230DF523800B82005E54AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84230DF623800B95005E54AB /* Venue.swift */,
+				84230DF823800BE6005E54AB /* VenueLocation.swift */,
+				84230DFA23800C1E005E54AB /* VenueLabeledLatLng.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		84B8DB56237B688200B88D4B = {
 			isa = PBXGroup;
 			children = (
 				84B8DB61237B688200B88D4B /* ForsquareLookup */,
 				84B8DB78237B688300B88D4B /* ForsquareLookupTests */,
 				84B8DB60237B688200B88D4B /* Products */,
+				A73FA7574FE981EAA8F45C71 /* Pods */,
+				8E874511A348B41F2CC96B64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +121,8 @@
 		84B8DB61237B688200B88D4B /* ForsquareLookup */ = {
 			isa = PBXGroup;
 			children = (
+				84230DF22380065E005E54AB /* Presenter */,
+				84B8DB84237B6D0A00B88D4B /* Model */,
 				84B8DB62237B688200B88D4B /* AppDelegate.swift */,
 				84B8DB64237B688200B88D4B /* SceneDelegate.swift */,
 				84B8DB66237B688200B88D4B /* ViewController.swift */,
@@ -99,6 +143,36 @@
 			path = ForsquareLookupTests;
 			sourceTree = "<group>";
 		};
+		84B8DB84237B6D0A00B88D4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84230DF523800B82005E54AB /* Data */,
+				841822AE237DF67800F7F4B3 /* SecretsKeeper.swift */,
+				84230DFC2380106F005E54AB /* ForsquareFacade.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E874511A348B41F2CC96B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54BA3FF8C3D5C1FAF7FD3E52 /* Pods_ForsquareLookup.framework */,
+				B7467DCE00A6B381AEE824FE /* Pods_ForsquareLookupTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A73FA7574FE981EAA8F45C71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F39A36E06035A7979CFDFA64 /* Pods-ForsquareLookup.debug.xcconfig */,
+				899404B3387630F527F38F2A /* Pods-ForsquareLookup.release.xcconfig */,
+				B9FC1B0DE46BABCEAEE89140 /* Pods-ForsquareLookupTests.debug.xcconfig */,
+				6DC5B54E207B1D42DF9565DA /* Pods-ForsquareLookupTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B8DB7E237B688300B88D4B /* Build configuration list for PBXNativeTarget "ForsquareLookup" */;
 			buildPhases = (
+				353D4BBF6547481A7FED9AA7 /* [CP] Check Pods Manifest.lock */,
 				84B8DB5B237B688200B88D4B /* Sources */,
 				84B8DB5C237B688200B88D4B /* Frameworks */,
 				84B8DB5D237B688200B88D4B /* Resources */,
+				184C03AF70861273F2AC1319 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B8DB81237B688300B88D4B /* Build configuration list for PBXNativeTarget "ForsquareLookupTests" */;
 			buildPhases = (
+				A243ACFB6359964660C0A137 /* [CP] Check Pods Manifest.lock */,
 				84B8DB71237B688300B88D4B /* Sources */,
 				84B8DB72237B688300B88D4B /* Frameworks */,
 				84B8DB73237B688300B88D4B /* Resources */,
@@ -195,14 +272,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		184C03AF70861273F2AC1319 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForsquareLookup/Pods-ForsquareLookup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForsquareLookup/Pods-ForsquareLookup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForsquareLookup/Pods-ForsquareLookup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		353D4BBF6547481A7FED9AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForsquareLookup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A243ACFB6359964660C0A137 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForsquareLookupTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84B8DB5B237B688200B88D4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84B8DB67237B688200B88D4B /* ViewController.swift in Sources */,
+				84230DFB23800C1E005E54AB /* VenueLabeledLatLng.swift in Sources */,
+				84230DF723800B95005E54AB /* Venue.swift in Sources */,
 				84B8DB63237B688200B88D4B /* AppDelegate.swift in Sources */,
+				84230DF923800BE6005E54AB /* VenueLocation.swift in Sources */,
+				84230DF423800678005E54AB /* VenuesPresenter.swift in Sources */,
+				84230DFD2380106F005E54AB /* ForsquareFacade.swift in Sources */,
 				84B8DB65237B688200B88D4B /* SceneDelegate.swift in Sources */,
+				841822AF237DF67800F7F4B3 /* SecretsKeeper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +507,7 @@
 		};
 		84B8DB7F237B688300B88D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39A36E06035A7979CFDFA64 /* Pods-ForsquareLookup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +526,7 @@
 		};
 		84B8DB80237B688300B88D4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899404B3387630F527F38F2A /* Pods-ForsquareLookup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +545,7 @@
 		};
 		84B8DB82237B688300B88D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FC1B0DE46BABCEAEE89140 /* Pods-ForsquareLookupTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +568,7 @@
 		};
 		84B8DB83237B688300B88D4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC5B54E207B1D42DF9565DA /* Pods-ForsquareLookupTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
