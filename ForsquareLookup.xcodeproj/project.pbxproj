@@ -13,6 +13,7 @@
 		84230DF923800BE6005E54AB /* VenueLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DF823800BE6005E54AB /* VenueLocation.swift */; };
 		84230DFB23800C1E005E54AB /* VenueLabeledLatLng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DFA23800C1E005E54AB /* VenueLabeledLatLng.swift */; };
 		84230DFD2380106F005E54AB /* ForsquareFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DFC2380106F005E54AB /* ForsquareFacade.swift */; };
+		84463E702381A7620041F2F4 /* CredentialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84463E6F2381A7620041F2F4 /* CredentialsController.swift */; };
 		84B8DB63237B688200B88D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB62237B688200B88D4B /* AppDelegate.swift */; };
 		84B8DB65237B688200B88D4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB64237B688200B88D4B /* SceneDelegate.swift */; };
 		84B8DB67237B688200B88D4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8DB66237B688200B88D4B /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		84230DF823800BE6005E54AB /* VenueLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueLocation.swift; sourceTree = "<group>"; };
 		84230DFA23800C1E005E54AB /* VenueLabeledLatLng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueLabeledLatLng.swift; sourceTree = "<group>"; };
 		84230DFC2380106F005E54AB /* ForsquareFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForsquareFacade.swift; sourceTree = "<group>"; };
+		84463E6F2381A7620041F2F4 /* CredentialsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsController.swift; sourceTree = "<group>"; };
 		84B8DB5F237B688200B88D4B /* ForsquareLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForsquareLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B8DB62237B688200B88D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B8DB64237B688200B88D4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				84B8DB66237B688200B88D4B /* ViewController.swift */,
 				84B8DB68237B688200B88D4B /* Main.storyboard */,
 				84B8DB6D237B688300B88D4B /* LaunchScreen.storyboard */,
+				84463E6F2381A7620041F2F4 /* CredentialsController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				84230DF423800678005E54AB /* VenuesPresenter.swift in Sources */,
 				84230DFD2380106F005E54AB /* ForsquareFacade.swift in Sources */,
 				84B8DB65237B688200B88D4B /* SceneDelegate.swift in Sources */,
+				84463E702381A7620041F2F4 /* CredentialsController.swift in Sources */,
 				841822AF237DF67800F7F4B3 /* SecretsKeeper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,9 +42,15 @@ class VenuesPresenter: NSObject {
         }
         catch AuthenticationError.noUserRegistered {
             print("No user registered!")
+            viewDelegate?.askForCredentials(completion: { (user: String, secret: String) in
+                try? self.keeper.storeSecret(secret, forUserId: user)
+            })
         }
         catch AuthenticationError.keychaninNoSecretFound {
             print("Secred input needed")
+            viewDelegate?.askForCredentials(completion: { (user: String, secret: String) in
+                try? self.keeper.storeSecret(secret, forUserId: user)
+            })
         }
         catch {
             print(error)
@@ -70,6 +76,7 @@ struct VenueRow {
 
 protocol VenuesPresenterDelegate: class {
     func refreshVenuesList()
+    func askForCredentials(completion: @escaping (String, String) -> Void)
 }
 
 extension VenuesPresenter: CLLocationManagerDelegate {

@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, VenuesPresenterDelegate {
     
+    
     // next phase would be dependency injection, but let it be for now
     let presenter = VenuesPresenter()
 
@@ -31,6 +32,12 @@ class ViewController: UIViewController, VenuesPresenterDelegate {
     func refreshVenuesList() {
         resultsTable.reloadData()
     }
+    
+    func askForCredentials(completion: @escaping (String, String) -> Void) {
+        performSegue(withIdentifier: "popupRequest", sender: self)
+    }
+    
+    
 }
 
 extension ViewController: UITableViewDataSource {
