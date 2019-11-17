@@ -21,14 +21,18 @@ class VenuesPresenter: NSObject {
         super.init()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        locationManager.requestLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
     }
     
     public func onVenueNameInput(_ name: String) {
         do {
             let user = try keeper.getUserId()
             let secret = try keeper.getSecret()
-            let locationCoords = locationManager.location?.coordinate ?? CLLocationCoordinate2D(latitude: 54.404332, longitude: 18.570695)
+            guard let locationCoords = locationManager.location?.coordinate else {
+                print("can't get current location")
+                return
+            }
             
             forsquare.searchForVenues(named: name,
                                       location: locationCoords,
