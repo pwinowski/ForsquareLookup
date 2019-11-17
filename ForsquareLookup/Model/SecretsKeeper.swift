@@ -43,6 +43,7 @@ class SecretsKeeper {
         let searchQuery: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
                                           kSecAttrAccount as String: account,
                                           kSecMatchLimit as String: kSecMatchLimitOne,
+                                          kSecReturnAttributes as String: true,
                                           kSecReturnData as String: true]
         var item: CFTypeRef?
         let status = SecItemCopyMatching(searchQuery as CFDictionary, &item)

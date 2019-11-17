@@ -20,14 +20,15 @@ class VenuesPresenter: NSObject {
     override init() {
         super.init()
         locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     public func onVenueNameInput(_ name: String) {
-        locationManager.requestLocation()
         do {
             let user = try keeper.getUserId()
             let secret = try keeper.getSecret()
-            guard let locationCoords = locationManager.location?.coordinate else { return }
+            let locationCoords = locationManager.location?.coordinate ?? CLLocationCoordinate2D(latitude: 54.404332, longitude: 18.570695)
             
             forsquare.searchForVenues(named: name,
                                       location: locationCoords,
@@ -36,7 +37,6 @@ class VenuesPresenter: NSObject {
                                         self.rows = results.map {
                                             VenueRow(venue: $0)
                                         }
-                                        
                                         self.viewDelegate?.refreshVenuesList()
             }
         }
@@ -58,7 +58,6 @@ class VenuesPresenter: NSObject {
         }
     }
     
-    public var rowsCount: Int = 0
     public var rows: [VenueRow] = []
 }
 

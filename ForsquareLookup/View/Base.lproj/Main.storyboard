@@ -109,6 +109,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-iR-a7o">
                                 <rect key="frame" x="33" y="309" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="iQJ-mP-NrE" eventType="touchUpInside" id="BYY-70-YOG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1X-Q0-b1V">
                                 <rect key="frame" x="337" y="309" width="48" height="30"/>
