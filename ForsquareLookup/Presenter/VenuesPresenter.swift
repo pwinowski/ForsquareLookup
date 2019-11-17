@@ -16,7 +16,11 @@ class VenuesPresenter: NSObject {
     private let forsquare = ForsquareFacade()
     private let keeper = SecretsKeeper()
     private let locationManager = CLLocationManager()
+    
     weak var viewDelegate: VenuesPresenterDelegate?
+    
+    public var rows: [VenueRow] = []
+    
     override init() {
         super.init()
         locationManager.delegate = self
@@ -62,7 +66,16 @@ class VenuesPresenter: NSObject {
         }
     }
     
-    public var rows: [VenueRow] = []
+}
+
+extension VenuesPresenter: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("Location updated")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location update failed: \(error.localizedDescription)")
+    }
 }
 
 struct VenueRow {
@@ -80,14 +93,4 @@ struct VenueRow {
 protocol VenuesPresenterDelegate: class {
     func refreshVenuesList()
     func askForCredentials(completion: @escaping (String, String) -> Void)
-}
-
-extension VenuesPresenter: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Location updated")
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Location update failed: \(error.localizedDescription)")
-    }
 }

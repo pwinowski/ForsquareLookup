@@ -33,6 +33,8 @@ class ViewController: UIViewController, VenuesPresenterDelegate {
         }
     }
     
+    // MARK:------- VenuesPresenterDelegate ----------
+    
     func refreshVenuesList() {
         resultsTable.reloadData()
     }
