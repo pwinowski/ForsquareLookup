@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-class VenuesPresenter {
+class VenuesPresenter: NSObject {
     
     // next phase would be protocols instead of fixed classes,
     // leading to dependency injection, but let it be for now
@@ -17,6 +17,10 @@ class VenuesPresenter {
     private let keeper = SecretsKeeper()
     private let locationManager = CLLocationManager()
     weak var viewDelegate: VenuesPresenterDelegate?
+    override init() {
+        super.init()
+        locationManager.delegate = self
+    }
     
     public func onVenueNameInput(_ name: String) {
         locationManager.requestLocation()
@@ -37,10 +41,10 @@ class VenuesPresenter {
             }
         }
         catch AuthenticationError.noUserRegistered {
-            
+            print("No user registered!")
         }
         catch AuthenticationError.keychaninNoSecretFound {
-            
+            print("Secred input needed")
         }
         catch {
             print(error)
@@ -66,4 +70,14 @@ struct VenueRow {
 
 protocol VenuesPresenterDelegate: class {
     func refreshVenuesList()
+}
+
+extension VenuesPresenter: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("Location updated")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location update failed: \(error.localizedDescription)")
+    }
 }

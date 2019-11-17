@@ -23,6 +23,9 @@ class ViewController: UIViewController, VenuesPresenterDelegate {
     }
 
     @IBAction func onAnyTextInput(_ sender: UITextField) {
+        if let input = sender.text {
+            presenter.onVenueNameInput(input)
+        }
     }
     
     func refreshVenuesList() {
