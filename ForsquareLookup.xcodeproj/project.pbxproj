@@ -98,6 +98,16 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		84230DFE23817B6F005E54AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B8DB66237B688200B88D4B /* ViewController.swift */,
+				84B8DB68237B688200B88D4B /* Main.storyboard */,
+				84B8DB6D237B688300B88D4B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84B8DB56237B688200B88D4B = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +131,12 @@
 		84B8DB61237B688200B88D4B /* ForsquareLookup */ = {
 			isa = PBXGroup;
 			children = (
+				84230DFE23817B6F005E54AB /* View */,
 				84230DF22380065E005E54AB /* Presenter */,
 				84B8DB84237B6D0A00B88D4B /* Model */,
 				84B8DB62237B688200B88D4B /* AppDelegate.swift */,
 				84B8DB64237B688200B88D4B /* SceneDelegate.swift */,
-				84B8DB66237B688200B88D4B /* ViewController.swift */,
-				84B8DB68237B688200B88D4B /* Main.storyboard */,
 				84B8DB6B237B688300B88D4B /* Assets.xcassets */,
-				84B8DB6D237B688300B88D4B /* LaunchScreen.storyboard */,
 				84B8DB70237B688300B88D4B /* Info.plist */,
 			);
 			path = ForsquareLookup;

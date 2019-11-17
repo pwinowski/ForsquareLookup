@@ -17,7 +17,7 @@ class SecretsKeeper {
         }
         guard let storedId = UserDefaults.standard.string(forKey: "UserId")
             else {
-                throw AuthenticationError.noUserRefistered
+                throw AuthenticationError.noUserRegistered
         }
         self.userId = storedId
         return storedId
@@ -60,7 +60,7 @@ class SecretsKeeper {
 }
 
 public enum AuthenticationError: Error {
-    case noUserRefistered
+    case noUserRegistered
     case keychainSaveError
     case keychaninNoSecretFound
     case keychainOtherError
